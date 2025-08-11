@@ -5,7 +5,7 @@
 #include "my_keycode.h"
 #include "os_detection.h"
 
-const int16_t SWIPE_THRESHOLD = 7;
+const int16_t SWIPE_THRESHOLD = 5;
 bool is_swiped = false;
 bool canceller = false;
 

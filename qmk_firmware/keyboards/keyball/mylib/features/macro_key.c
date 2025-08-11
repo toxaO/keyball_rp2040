@@ -312,11 +312,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 state = NONE;
                 if (is_swiped == false && timer_elapsed(swipe_timer) < TAPPING_TERM){
                   tap_code16_os(C(KC_T), G(KC_T), G(KC_T), KC_NO, KC_NO);
-                  /* if (detected_host_os() == OS_MACOS || detected_host_os() == OS_IOS){ */
-                  /*   tap_code16(G(KC_T)); */
-                  /* } else { */
-                  /*   tap_code16(C(KC_T)); */
-                  /* } */
                 }
                 repeat_speed = NORMAL;
             }
@@ -335,11 +330,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 state = NONE;
                 if (is_swiped == false && timer_elapsed(swipe_timer) < TAPPING_TERM){
                   tap_code16_os(G(KC_Z), A(C(KC_ENT)), A(C(KC_ENT)), KC_NO, KC_NO);
-                  /* if (detected_host_os() == OS_MACOS || detected_host_os() == OS_IOS){ */
-                  /*   tap_code16(A(C(KC_ENT))); */
-                  /* } else { */
-                  /*   tap_code16(G(KC_Z)); */
-                  /* } */
                   if (host_os == OS_WINDOWS){
                     unregister_code(KC_LGUI);
                   }
