@@ -5,7 +5,6 @@ MACRO_ENABLE = yes
 KEY_OVERRIDE_ENABLE = no
 OS_DETECTION_ENABLE = yes
 TAP_DANCE_ENABLE = no
-KEYBOARD_SHARED_EP = yes
 EXTRAFLAGS += -flto
 
 # 容量削減
@@ -24,3 +23,6 @@ SRC += mylib/features/oled.c
 SRC += mylib/features/swipe.c
 SRC += mylib/features/util.c
 SRC += mylib/features/combo.c
+
+# これをいれると左右通信がされなくなるので気をつける
+# KEYBOARD_SHARED_EP = yes
