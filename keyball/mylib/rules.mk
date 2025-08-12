@@ -5,7 +5,6 @@ MACRO_ENABLE = yes
 KEY_OVERRIDE_ENABLE = no
 OS_DETECTION_ENABLE = yes
 TAP_DANCE_ENABLE = no
-EXTRAFLAGS += -flto
 
 # 容量削減
 LTO_ENABLE = yes
@@ -26,3 +25,5 @@ SRC += mylib/features/combo.c
 
 # これをいれると左右通信がされなくなるので気をつける
 # KEYBOARD_SHARED_EP = yes
+# 容量の削減目的
+EXTRAFLAGS += -flto
